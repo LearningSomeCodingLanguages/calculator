@@ -55,6 +55,18 @@ document.getElementById('resultDifference').textContent = difference;
   
 function calculateProduct() {
 // Get the Values from input fields
+let Pnum1 = parseFloat(document.getElementById('Pnum1').value);
+let Pnum2 = parseFloat(document.getElementById('Pnum2').value);
+
+// Calculate the sum
+let product = Pnum1 * Pnum2;
+
+// Display the result
+document.getElementById('resultProduct').textContent = product;
+}
+
+function calculateQuotient() {
+// Get the Values from input fields
 let Qnum1 = parseFloat(document.getElementById('Qnum1').value);
 let Qnum2 = parseFloat(document.getElementById('Qnum2').value);
 
