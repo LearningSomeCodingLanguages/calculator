@@ -13,14 +13,14 @@
     <script>
       function calculationSum() (
         // Get the Values from input fields
-        let num1 = parsefloat(document.getElementById('num1').value);
-        let num2 = parsefloat(document.getElementById('num2').value);
+        let num1 = parseFloat(document.getElementById('num1').value);
+        let num2 = parseFloat(document.getElementById('num2').value);
 
         // Calculate the sum
         let sum = num1 + num2;
 
         // Display the result
-        document.getElementById('result').textcontent = sum;
+        document.getElementById('result').textContent = sum;
       )
     </script>
   </body>
