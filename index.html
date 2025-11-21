@@ -9,13 +9,25 @@
 <input type="number" id="num2" placeholder="Enter Second Number">
 <button onclick="calculateSum()">Calculate Sum</button>
 <p>Result: <span id="result"></span></p>
-
+  
+<h2>Subtract Two Numbers</h2>
+<input type="number" id="Dnum1" placeholder="Enter First Number">
+<input type="number" id="Dnum2" placeholder="Enter Second Number">
+<button onclick="calculateDifference()">Get the Difference</button>
+<p>Result: <span id="resultDifference"></span></p>
+  
 <h2>Multiply Two Numbers</h2>
 <input type="number" id="Pnum1" placeholder="Enter First Number">
 <input type="number" id="Pnum2" placeholder="Enter Second Number">
 <button onclick="calculateProduct()">Calculate Product</button>
 <p>Result: <span id="resultproduct"></span></p>
 
+<h2>Divide Two Numbers</h2>
+<input type="number" id="Qnum1" placeholder="Enter First Number">
+<input type="number" id="Qnum2" placeholder="Enter Second Number">
+<button onclick="calculateQuotient()">Get the Quotient and Remainder</button>
+<p>Result: <span id="resultQuotient"></span></p>
+  
 <script>
 function calculateSum() {
 // Get the Values from input fields
@@ -29,16 +41,28 @@ let sum = num1 + num2;
 document.getElementById('result').textContent = sum;
 }
   
-function calculateProduct() {
+function calculateDifference() {
 // Get the Values from input fields
-let Pnum1 = parseFloat(document.getElementById('Pnum1').value);
-let Pnum2 = parseFloat(document.getElementById('Pnum2').value);
+let Dnum1 = parseFloat(document.getElementById('Dnum1').value);
+let Dnum2 = parseFloat(document.getElementById('Dnum2').value);
 
 // Calculate the sum
-let Product = Pnum1 * Pnum2;
+let difference = num1 - num2;
 
 // Display the result
-document.getElementById('resultproduct').textContent = Product;
+document.getElementById('resultDifference').textContent = difference;
+}
+  
+function calculateProduct() {
+// Get the Values from input fields
+let Qnum1 = parseFloat(document.getElementById('Qnum1').value);
+let Qnum2 = parseFloat(document.getElementById('Qnum2').value);
+
+// Calculate the sum
+let quotient = Qnum1 * Qnum2;
+
+// Display the result
+document.getElementById('resultQuotient').textContent = quotient;
 }
 
 </script>
